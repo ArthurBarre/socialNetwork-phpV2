@@ -78,16 +78,22 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
         <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
             <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                    <a class=\"nav-link\" href=\"";
+        // line 31
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\">Home <span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Features</a>
+                    <a class=\"nav-link\" href=\"";
+        // line 34
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed");
+        echo "\">Feed</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Pricing</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">About</a>
+                    <a class=\"nav-link\" href=\"";
+        // line 37
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-create");
+        echo "\">Create feed</a>
                 </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
@@ -98,12 +104,12 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </nav>
     <div class=\"container\">
         ";
-        // line 50
+        // line 47
         $this->displayBlock('body', $context, $blocks);
-        // line 51
+        // line 48
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 52
+        // line 49
         echo "    </div>
     </body>
 </html>
@@ -151,7 +157,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 50
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -168,7 +174,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 51
+    // line 48
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -190,9 +196,14 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  172 => 51,  155 => 50,  138 => 19,  120 => 5,  107 => 52,  104 => 51,  102 => 50,  70 => 20,  68 => 19,  51 => 5,  45 => 1,);
+        return array (  178 => 48,  161 => 47,  144 => 19,  126 => 5,  113 => 49,  110 => 48,  108 => 47,  95 => 37,  89 => 34,  83 => 31,  70 => 20,  68 => 19,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -227,16 +238,13 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
         <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
             <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                    <a class=\"nav-link\" href=\"{{ path('home') }}\">Home <span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Features</a>
+                    <a class=\"nav-link\" href=\"{{ path('feed') }}\">Feed</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">Pricing</a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">About</a>
+                    <a class=\"nav-link\" href=\"{{ path('feed-create') }}\">Create feed</a>
                 </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
@@ -251,6 +259,6 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </div>
     </body>
 </html>
-", "base.html.twig", "/Users/HETIC/Desktop/mySocialNetwork/templates/base.html.twig");
+", "base.html.twig", "/Users/HETIC/Desktop/socialNetwork-phpV2/templates/base.html.twig");
     }
 }

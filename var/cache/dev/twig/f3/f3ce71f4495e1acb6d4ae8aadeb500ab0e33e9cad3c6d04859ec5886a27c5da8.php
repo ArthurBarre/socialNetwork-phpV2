@@ -81,58 +81,36 @@ class __TwigTemplate_d07e583c2769f96ded13255c623ecfd1ae86973dca548d99420dd5f526e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Salut ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/Users/HETIC/Desktop/mySocialNetwork/src/Controller/FeedSocialNetworkController.php", 0), "html", null, true);
-        echo "\">src/Controller/FeedSocialNetworkController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/Users/HETIC/Desktop/mySocialNetwork/templates/feed_social_network/index.html.twig", 0), "html", null, true);
-        echo "\">templates/feed_social_network/index.html.twig</a></code></li>
-    </ul>
-
+        echo "
     ";
-        // line 20
+        // line 7
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 20, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 7, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
-            // line 21
+            // line 8
             echo "    <h2>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", [], "any", false, false, false, 21), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", [], "any", false, false, false, 8), "html", null, true);
             echo "</h2>
         <div class=\"metadata\">Ecrit le ";
-            // line 22
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 22), "d/m/Y"), "html", null, true);
+            // line 9
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 9), "d/m/Y"), "html", null, true);
             echo " à ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 22), "H:i "), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 9), "H:i "), "html", null, true);
             echo "</div>
         <img src=\"";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "image", [], "any", false, false, false, 23), "html", null, true);
+            // line 10
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "image", [], "any", false, false, false, 10), "html", null, true);
             echo "\">
         <a href=\"";
-            // line 24
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-show", ["id" => twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 24)]), "html", null, true);
+            // line 11
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-show", ["id" => twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 11)]), "html", null, true);
             echo "\" class=\"btn btn-primary\">Decouvrir l'article</a>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 13
         echo "</div>
 ";
         
@@ -155,7 +133,7 @@ class __TwigTemplate_d07e583c2769f96ded13255c623ecfd1ae86973dca548d99420dd5f526e
 
     public function getDebugInfo()
     {
-        return array (  136 => 26,  128 => 24,  124 => 23,  118 => 22,  113 => 21,  109 => 20,  103 => 17,  99 => 16,  92 => 12,  84 => 6,  75 => 5,  57 => 3,  35 => 1,);
+        return array (  114 => 13,  106 => 11,  102 => 10,  96 => 9,  91 => 8,  87 => 7,  84 => 6,  75 => 5,  57 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -165,19 +143,6 @@ class __TwigTemplate_d07e583c2769f96ded13255c623ecfd1ae86973dca548d99420dd5f526e
 {% block title %}Hello FeedSocialNetworkController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Salut {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ '/Users/HETIC/Desktop/mySocialNetwork/src/Controller/FeedSocialNetworkController.php'|file_link(0) }}\">src/Controller/FeedSocialNetworkController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ '/Users/HETIC/Desktop/mySocialNetwork/templates/feed_social_network/index.html.twig'|file_link(0) }}\">templates/feed_social_network/index.html.twig</a></code></li>
-    </ul>
 
     {% for article in articles %}
     <h2>{{ article.title }}</h2>
@@ -187,6 +152,6 @@ class __TwigTemplate_d07e583c2769f96ded13255c623ecfd1ae86973dca548d99420dd5f526e
     {% endfor %}
 </div>
 {% endblock %}
-", "feed_social_network/index.html.twig", "/Users/HETIC/Desktop/mySocialNetwork/templates/feed_social_network/index.html.twig");
+", "feed_social_network/index.html.twig", "/Users/HETIC/Desktop/socialNetwork-phpV2/templates/feed_social_network/index.html.twig");
     }
 }

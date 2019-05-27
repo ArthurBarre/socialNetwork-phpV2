@@ -68,6 +68,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
         echo twig_escape_filter($this->env, (isset($context["title"]) || array_key_exists("title", $context) ? $context["title"] : (function () { throw new RuntimeError('Variable "title" does not exist.', 6, $this->source); })()), "html", null, true);
         echo "</h1>
 <p>EN CONSTRUCTION !!!!!</p>
+    <a href=\"/feed\">Aller sur le feed</a>
 
 ";
         
@@ -102,8 +103,9 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
 <h1>{{ title }}</h1>
 <p>EN CONSTRUCTION !!!!!</p>
+    <a href=\"/feed\">Aller sur le feed</a>
 
 {% endblock %}
-", "feed_social_network/home.html.twig", "/Users/HETIC/Desktop/mySocialNetwork/templates/feed_social_network/home.html.twig");
+", "feed_social_network/home.html.twig", "/Users/HETIC/Desktop/socialNetwork-phpV2/templates/feed_social_network/home.html.twig");
     }
 }

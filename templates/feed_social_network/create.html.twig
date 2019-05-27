@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Create d'un article</h1>
+
+    {{ form_start(formArticle) }}
+
+
+    {{ form_row(formArticle.title) }}
+    {{ form_row(formArticle.content) }}
+    {{ form_row(formArticle.image, {'attr' : {'placeholder':'Ajouter le lien de votre image', 'class':'form-control' }})}}
+
+
+    <button type="submit" class="btn btn-success">Ajouter l'article</button>
+
+    {{ form_end(formArticle) }}
+{% endblock %}
