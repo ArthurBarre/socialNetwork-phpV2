@@ -1,6 +1,7 @@
 <?php
 namespace App\Controller;
 
+use App\Entity\User;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -101,6 +102,19 @@ class FeedSocialNetworkController extends AbstractController
         $article = $repo->classByDate();
         return $this->render('feed_social_network/show.html.twig', [
             'article'   => $article
+        ]);
+    }
+
+
+    /**
+     * @Route ("/staff", name="staff-show")
+     */
+    public function staffShow()
+    {
+        $repo = $this->getDoctrine()->getRepository(User::class);
+        $users = $repo->findAll();
+        return $this->render('feed_social_network/staff.html.twig', [
+            'users' => $users
         ]);
     }
 }

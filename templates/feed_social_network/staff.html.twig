@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+    {% if app.user %}
+{% for user in users %}
+<h1>Bonjour {{ user.username }}</h1>
+
+
+    {% endfor %}
+
+    {% endif %}
+
+{% endblock %}

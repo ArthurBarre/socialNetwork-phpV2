@@ -70,40 +70,47 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\">Home <span class=\"sr-only\">(current)</span></a>
                 </li>
-                <li class=\"nav-item\">
+                ";
+        // line 20
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 20, $this->source); })()), "user", [], "any", false, false, false, 20)) {
+            // line 21
+            echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 21
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-create");
-        echo "\">Feed</a>
+            // line 22
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-create");
+            echo "\">Feed</a>
                 </li>
-                <li class=\"nav-item\">
+                ";
+        }
+        // line 25
+        echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 24
+        // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_registration");
         echo "\">S'inscrire</a>
                 </li>
                 ";
-        // line 26
-        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26)) {
-            // line 27
+        // line 28
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 28, $this->source); })()), "user", [], "any", false, false, false, 28)) {
+            // line 29
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 28
+            // line 30
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_login");
             echo "\">Connexion</a>
                 </li>
                 ";
         } else {
-            // line 31
+            // line 33
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 32
+            // line 34
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_logout");
             echo "\">Deconnexion</a>
                 </li>
                 ";
         }
-        // line 35
+        // line 37
         echo "            </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
@@ -113,12 +120,12 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </nav>
     <div class=\"container\">
         ";
-        // line 43
+        // line 45
         $this->displayBlock('body', $context, $blocks);
-        // line 44
+        // line 46
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 45
+        // line 47
         echo "    </div>
     </body>
 </html>
@@ -166,7 +173,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 43
+    // line 45
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -183,7 +190,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 44
+    // line 46
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -212,7 +219,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     public function getDebugInfo()
     {
-        return array (  187 => 44,  170 => 43,  153 => 7,  135 => 5,  122 => 45,  119 => 44,  117 => 43,  107 => 35,  101 => 32,  98 => 31,  92 => 28,  89 => 27,  87 => 26,  82 => 24,  76 => 21,  70 => 18,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
+        return array (  194 => 46,  177 => 45,  160 => 7,  142 => 5,  129 => 47,  126 => 46,  124 => 45,  114 => 37,  108 => 34,  105 => 33,  99 => 30,  96 => 29,  94 => 28,  89 => 26,  86 => 25,  80 => 22,  77 => 21,  75 => 20,  70 => 18,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -236,9 +243,11 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"{{ path('home') }}\">Home <span class=\"sr-only\">(current)</span></a>
                 </li>
+                {% if app.user %}
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"{{ path('feed-create') }}\">Feed</a>
                 </li>
+                {% endif %}
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"{{ path('security_registration') }}\">S'inscrire</a>
                 </li>
