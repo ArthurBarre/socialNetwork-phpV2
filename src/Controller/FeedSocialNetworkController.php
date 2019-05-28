@@ -1,6 +1,6 @@
 <?php
 namespace App\Controller;
-use MongoDB\Driver\Manager;
+
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -36,9 +36,6 @@ class FeedSocialNetworkController extends AbstractController
                 ]
             ])
             ->add('image')
-            ->add('save', SubmitType::class, [
-                'label'=>'Enregistrer'
-            ])
             ->getForm();
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
@@ -46,7 +43,7 @@ class FeedSocialNetworkController extends AbstractController
             $article->setCreatedAt(new \DateTime());
             $manager->persist($article);
             $manager->flush();
-            return $this->redirectToRoute('feed-show', ['id'=> $article->getId()]);
+            return $this->redirectToRoute('home');
         }
         return $this->render('feed_social_network/home.html.twig', [
             'controller_name' => 'FeedSocialNetworkController',
