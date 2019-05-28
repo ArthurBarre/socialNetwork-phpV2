@@ -65,7 +65,12 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
         echo "    <h1>";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 4, $this->source); })()), "title", [], "any", false, false, false, 4), "html", null, true);
         echo "</h1>
-    <div class=\"metadata\">Creer le patati </div>
+    <div class=\"metadata\">";
+        // line 5
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 5, $this->source); })()), "createdAt", [], "any", false, false, false, 5), "d/m/Y"), "html", null, true);
+        echo " à ";
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 5, $this->source); })()), "createdAt", [], "any", false, false, false, 5), "H:i "), "html", null, true);
+        echo "</div>
     <img src=\"article.image\">
 
    <p>";
@@ -94,7 +99,7 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
 
     public function getDebugInfo()
     {
-        return array (  73 => 8,  65 => 4,  56 => 3,  34 => 1,);
+        return array (  78 => 8,  70 => 5,  65 => 4,  56 => 3,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -103,7 +108,7 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
 
 {% block body %}
     <h1>{{ article.title }}</h1>
-    <div class=\"metadata\">Creer le patati </div>
+    <div class=\"metadata\">{{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i ') }}</div>
     <img src=\"article.image\">
 
    <p>{{ article.content }}</p>

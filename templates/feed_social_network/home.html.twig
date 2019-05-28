@@ -7,6 +7,7 @@
 <p>EN CONSTRUCTION !!!!!</p>
 
     <h1>Create d'un article</h1>
+    {% if app.user %}
 
     {{ form_start(formArticle) }}
 
@@ -17,10 +18,9 @@
 
 
     <button type="submit" class="btn btn-success">Ajouter l'article</button>
-
     {{ form_end(formArticle) }}
 
-
+    {% endif %}
 
     {% for article in articles %}
         <h2>{{ article.title }}</h2>

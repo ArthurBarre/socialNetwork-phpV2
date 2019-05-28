@@ -2,7 +2,7 @@
 
 {% block body %}
     <h1>{{ article.title }}</h1>
-    <div class="metadata">Creer le patati </div>
+    <div class="metadata">{{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i ') }}</div>
     <img src="article.image">
 
    <p>{{ article.content }}</p>

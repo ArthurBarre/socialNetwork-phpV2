@@ -37,6 +37,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'feed-show' => [['id'], ['_controller' => 'App\\Controller\\FeedSocialNetworkController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/feed']], [], []],
         'security_registration' => [[], ['_controller' => 'App\\Controller\\SecurityController::registration'], [], [['text', '/inscription']], [], []],
         'security_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/connexion']], [], []],
+        'security_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/deconnexion']], [], []],
     ];
         }
     }

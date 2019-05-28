@@ -83,10 +83,32 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
         // line 25
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-create");
-        echo "\">Create feed</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_registration");
+        echo "\">S'inscrire</a>
                 </li>
-            </ul>
+                ";
+        // line 27
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 27, $this->source); })()), "user", [], "any", false, false, false, 27)) {
+            // line 28
+            echo "                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"";
+            // line 29
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_login");
+            echo "\">Connexion</a>
+                </li>
+                ";
+        } else {
+            // line 32
+            echo "                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"";
+            // line 33
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_logout");
+            echo "\">Deconnexion</a>
+                </li>
+                ";
+        }
+        // line 36
+        echo "            </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
                 <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>
@@ -95,12 +117,12 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </nav>
     <div class=\"container\">
         ";
-        // line 35
+        // line 44
         $this->displayBlock('body', $context, $blocks);
-        // line 36
+        // line 45
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 37
+        // line 46
         echo "    </div>
     </body>
 </html>
@@ -148,7 +170,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 35
+    // line 44
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -165,7 +187,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 36
+    // line 45
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -194,7 +216,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     public function getDebugInfo()
     {
-        return array (  169 => 36,  152 => 35,  135 => 7,  117 => 5,  104 => 37,  101 => 36,  99 => 35,  86 => 25,  80 => 22,  74 => 19,  63 => 11,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
+        return array (  191 => 45,  174 => 44,  157 => 7,  139 => 5,  126 => 46,  123 => 45,  121 => 44,  111 => 36,  105 => 33,  102 => 32,  96 => 29,  93 => 28,  91 => 27,  86 => 25,  80 => 22,  74 => 19,  63 => 11,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -223,8 +245,17 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
                     <a class=\"nav-link\" href=\"{{ path('feed-create') }}\">Feed</a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"{{ path('feed-create') }}\">Create feed</a>
+                    <a class=\"nav-link\" href=\"{{ path('security_registration') }}\">S'inscrire</a>
                 </li>
+                {% if not app.user %}
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"{{ path('security_login') }}\">Connexion</a>
+                </li>
+                {% else  %}
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"{{ path('security_logout') }}\">Deconnexion</a>
+                </li>
+                {% endif %}
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
