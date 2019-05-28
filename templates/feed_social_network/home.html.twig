@@ -3,8 +3,37 @@
 
 {% block body %}
 
-<h1>{{ title }}</h1>
+
 <p>EN CONSTRUCTION !!!!!</p>
+
+    <h1>Create d'un article</h1>
+
+    {{ form_start(formArticle) }}
+
+
+    {{ form_row(formArticle.title) }}
+    {{ form_row(formArticle.content) }}
+    {{ form_row(formArticle.image, {'attr' : {'placeholder':'Ajouter le lien de votre image', 'class':'form-control' }})}}
+
+
+    <button type="submit" class="btn btn-success">Ajouter l'article</button>
+
+    {{ form_end(formArticle) }}
+
+
+
+    {% for article in articles %}
+        <h2>{{ article.title }}</h2>
+        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i ') }}</div>
+        <img src="{{ article.image }}">
+        <a href="{{ path('feed-show', {'id' : article.id }) }}" class="btn btn-primary">Decouvrir l'article</a>
+    {% endfor %}
+
+
+
+
+
+
     <a href="/feed">Aller sur le feed</a>
 
 {% endblock %}

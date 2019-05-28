@@ -66,10 +66,13 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 4, $this->source); })()), "title", [], "any", false, false, false, 4), "html", null, true);
         echo "</h1>
     <div class=\"metadata\">Creer le patati </div>
-    <img src=\"http://placehold.it/350x150\">
+    <img src=\"article.image\">
 
-   <p>lkzehnrvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a  rvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a  rvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a</p>
-    <a href=\"\"
+   <p>";
+        // line 8
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 8, $this->source); })()), "content", [], "any", false, false, false, 8), "html", null, true);
+        echo "</p>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -91,7 +94,7 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
 
     public function getDebugInfo()
     {
-        return array (  65 => 4,  56 => 3,  34 => 1,);
+        return array (  73 => 8,  65 => 4,  56 => 3,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -101,11 +104,11 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
 {% block body %}
     <h1>{{ article.title }}</h1>
     <div class=\"metadata\">Creer le patati </div>
-    <img src=\"http://placehold.it/350x150\">
+    <img src=\"article.image\">
 
-   <p>lkzehnrvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a  rvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a  rvlhgrzabgjkzrhbjgvbrzahjn azrgfzaihfaziue iauegiua zzmz gjzmkaz mrgmje m om  ùlzmjrzlg az r oa a</p>
-    <a href=\"\"
+   <p>{{ article.content }}</p>
+
 {% endblock %}
-", "feed_social_network/show.html.twig", "/Users/HETIC/Desktop/mySocialNetwork/templates/feed_social_network/show.html.twig");
+", "feed_social_network/show.html.twig", "/Users/HETIC/Desktop/socialNetwork-phpV2/templates/feed_social_network/show.html.twig");
     }
 }
