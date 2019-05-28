@@ -20,7 +20,7 @@ class FeedSocialNetworkController extends AbstractController
     {
 
         $repo = $this->getDoctrine()->getRepository(Articles::class);
-        $articles = $repo->findAll();
+        $articles = $repo->classByDate();
         $article = new Articles();
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class, [
@@ -98,7 +98,7 @@ class FeedSocialNetworkController extends AbstractController
     public function show($id)
     {
         $repo = $this->getDoctrine()->getRepository(Articles::class);
-        $article = $repo->find($id);
+        $article = $repo->classByDate();
         return $this->render('feed_social_network/show.html.twig', [
             'article'   => $article
         ]);

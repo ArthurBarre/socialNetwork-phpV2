@@ -19,20 +19,21 @@ class ArticlesRepository extends ServiceEntityRepository
         parent::__construct($registry, Articles::class);
     }
 
-    // /**
-    //  * @return Articles[] Returns an array of Articles objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return Property[] Returns an array of Property objects
+     */
+
+    public function classByDate()
     {
-        return $this->createQueryBuilder('a')
+        return $this->createQueryBuilder('p')
 
-            ->orderBy('a.id', 'ASC')
+
+            ->orderBy('p.id', 'DESC')
             ->setMaxResults(10)
-
-        ;
+            ->getQuery()
+            ->getResult()
+            ;
     }
-    */
 
     /*
     public function findOneBySomeField($value): ?Articles

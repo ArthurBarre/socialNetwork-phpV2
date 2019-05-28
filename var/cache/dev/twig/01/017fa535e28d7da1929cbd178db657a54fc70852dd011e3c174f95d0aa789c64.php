@@ -58,10 +58,6 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
         echo "    </head>
     <body>
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-        <a class=\"navbar-brand\" href=\"";
-        // line 11
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">Navbar</a>
         <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>
@@ -70,44 +66,44 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
             <ul class=\"navbar-nav mr-auto\">
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"";
-        // line 19
+        // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\">Home <span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 22
+        // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-create");
         echo "\">Feed</a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 25
+        // line 24
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_registration");
         echo "\">S'inscrire</a>
                 </li>
                 ";
-        // line 27
-        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 27, $this->source); })()), "user", [], "any", false, false, false, 27)) {
-            // line 28
+        // line 26
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26)) {
+            // line 27
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 29
+            // line 28
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_login");
             echo "\">Connexion</a>
                 </li>
                 ";
         } else {
-            // line 32
+            // line 31
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 33
+            // line 32
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_logout");
             echo "\">Deconnexion</a>
                 </li>
                 ";
         }
-        // line 36
+        // line 35
         echo "            </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
@@ -117,12 +113,12 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </nav>
     <div class=\"container\">
         ";
-        // line 44
+        // line 43
         $this->displayBlock('body', $context, $blocks);
-        // line 45
+        // line 44
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 46
+        // line 45
         echo "    </div>
     </body>
 </html>
@@ -170,7 +166,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 44
+    // line 43
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -187,7 +183,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     }
 
-    // line 45
+    // line 44
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -216,7 +212,7 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
 
     public function getDebugInfo()
     {
-        return array (  191 => 45,  174 => 44,  157 => 7,  139 => 5,  126 => 46,  123 => 45,  121 => 44,  111 => 36,  105 => 33,  102 => 32,  96 => 29,  93 => 28,  91 => 27,  86 => 25,  80 => 22,  74 => 19,  63 => 11,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
+        return array (  187 => 44,  170 => 43,  153 => 7,  135 => 5,  122 => 45,  119 => 44,  117 => 43,  107 => 35,  101 => 32,  98 => 31,  92 => 28,  89 => 27,  87 => 26,  82 => 24,  76 => 21,  70 => 18,  58 => 8,  56 => 7,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -231,7 +227,6 @@ class __TwigTemplate_8b62dde7f22e94a846899ef039eae35b087fc801d71e37cea78beeadb1d
     </head>
     <body>
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-        <a class=\"navbar-brand\" href=\"{{ path('home') }}\">Navbar</a>
         <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>
