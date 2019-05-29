@@ -6,7 +6,7 @@
 
 <p>EN CONSTRUCTION !!!!!</p>
 
-    <h1>Create d'un article</h1>
+    <h1 class="megatest">Create d'un article</h1>
     <h2>Bonjour </h2>
     {% if app.user %}
 
@@ -28,7 +28,8 @@
     {% for article in articles %}
 
         <div class="form-control">
-            {{ article.content }}
+           {{ article.content }}
+            {{ article.createdAt | date('d/m/Y') }} et a {{ article.createdAt | date('H:i') }}
         </div>
 
     {% endfor %}

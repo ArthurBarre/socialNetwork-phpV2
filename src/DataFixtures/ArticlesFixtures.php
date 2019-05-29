@@ -13,11 +13,8 @@ class ArticlesFixtures extends Fixture
         for($i = 1; $i <= 10; $i++)
         {
             $articles = new Articles();
-
             $articles     ->setContent("Contenu de l'article $i");
-
             $articles     ->setCreatedAt(new \DateTime());
-
             $manager->persist($articles);
         }
 

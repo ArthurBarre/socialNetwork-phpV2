@@ -66,7 +66,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
 <p>EN CONSTRUCTION !!!!!</p>
 
-    <h1>Create d'un article</h1>
+    <h1 class=\"megatest\">Create d'un article</h1>
     <h2>Bonjour </h2>
     ";
         // line 11
@@ -107,9 +107,15 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
             // line 29
             echo "
         <div class=\"form-control\">
-            ";
+           ";
             // line 31
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "content", [], "any", false, false, false, 31), "html", null, true);
+            echo "
+            ";
+            // line 32
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 32), "d/m/Y"), "html", null, true);
+            echo " et a ";
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 32), "H:i"), "html", null, true);
             echo "
         </div>
 
@@ -118,7 +124,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 36
         echo "
 
 
@@ -148,7 +154,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
     public function getDebugInfo()
     {
-        return array (  122 => 35,  112 => 31,  108 => 29,  104 => 28,  99 => 25,  93 => 22,  85 => 17,  78 => 13,  75 => 12,  73 => 11,  65 => 5,  56 => 4,  34 => 1,);
+        return array (  128 => 36,  116 => 32,  112 => 31,  108 => 29,  104 => 28,  99 => 25,  93 => 22,  85 => 17,  78 => 13,  75 => 12,  73 => 11,  65 => 5,  56 => 4,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -161,7 +167,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
 <p>EN CONSTRUCTION !!!!!</p>
 
-    <h1>Create d'un article</h1>
+    <h1 class=\"megatest\">Create d'un article</h1>
     <h2>Bonjour </h2>
     {% if app.user %}
 
@@ -183,7 +189,8 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
     {% for article in articles %}
 
         <div class=\"form-control\">
-            {{ article.content }}
+           {{ article.content }}
+            {{ article.createdAt | date('d/m/Y') }} et a {{ article.createdAt | date('H:i') }}
         </div>
 
     {% endfor %}
