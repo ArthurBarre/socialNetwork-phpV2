@@ -7,10 +7,16 @@
     {% if app.user %}
 {% for user in users %}
 <h1>Bonjour {{ user.username }}</h1>
+{% endfor %}
 
 
+    {% for staff in staffs %}
+        <div style="width: 300px; height: 150px; display:flex;flex-wrap: nowrap;">
+            <h2>{{ staff.lastName }}</h2>
+
+            <p>{{  staff.imgHead }}</p>
+        </div>
     {% endfor %}
-
     {% endif %}
 
 {% endblock %}
