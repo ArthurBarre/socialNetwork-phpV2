@@ -13,9 +13,9 @@ class ArticlesFixtures extends Fixture
         for($i = 1; $i <= 10; $i++)
         {
             $articles = new Articles();
-            $articles     ->setTitle("Titre de l'article $i");
+
             $articles     ->setContent("Contenu de l'article $i");
-            $articles     ->setImage("http://placehold.it/350x150");
+
             $articles     ->setCreatedAt(new \DateTime());
 
             $manager->persist($articles);

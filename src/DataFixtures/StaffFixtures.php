@@ -29,10 +29,10 @@ class StaffFixtures extends Fixture
 
 
             $staffs = new Staff();
-            $staffs->setName($faker->company);
-            $staffs->setLastName($faker->name);
+            $staffs->setName($faker->firstName);
+            $staffs->setLastName($faker->lastName);
             $staffs->setImgHead($faker->name);
-            $staffs->setPoste($faker->address);
+            $staffs->setPoste($faker->jobTitle);
 
             $em->persist($staffs);
         }
