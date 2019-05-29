@@ -79,18 +79,12 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
             echo "
 
 
-    ";
-            // line 16
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formArticle"]) || array_key_exists("formArticle", $context) ? $context["formArticle"] : (function () { throw new RuntimeError('Variable "formArticle" does not exist.', 16, $this->source); })()), "title", [], "any", false, false, false, 16), 'row');
-            echo "
+
     ";
             // line 17
             echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formArticle"]) || array_key_exists("formArticle", $context) ? $context["formArticle"] : (function () { throw new RuntimeError('Variable "formArticle" does not exist.', 17, $this->source); })()), "content", [], "any", false, false, false, 17), 'row');
             echo "
-    ";
-            // line 18
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formArticle"]) || array_key_exists("formArticle", $context) ? $context["formArticle"] : (function () { throw new RuntimeError('Variable "formArticle" does not exist.', 18, $this->source); })()), "image", [], "any", false, false, false, 18), 'row', ["attr" => ["placeholder" => "Ajouter le lien de votre image", "class" => "form-control"]]);
-            echo "
+
 
 
     <button type=\"submit\" class=\"btn btn-success\">Ajouter l'article</button>
@@ -103,35 +97,28 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
         }
         // line 25
         echo "
+
+
     ";
-        // line 26
+        // line 28
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 26, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 28, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
-            // line 27
-            echo "        <h2>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", [], "any", false, false, false, 27), "html", null, true);
-            echo "</h2>
-        <div class=\"metadata\">Ecrit le ";
-            // line 28
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 28), "d/m/Y"), "html", null, true);
-            echo " à ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", [], "any", false, false, false, 28), "H:i "), "html", null, true);
-            echo "</div>
-        <img src=\"";
             // line 29
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "image", [], "any", false, false, false, 29), "html", null, true);
-            echo "\">
-        <a href=\"";
-            // line 30
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("feed-show", ["id" => twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 30)]), "html", null, true);
-            echo "\" class=\"btn btn-primary\">Decouvrir l'article</a>
+            echo "
+        <div class=\"form-control\">
+            ";
+            // line 31
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "content", [], "any", false, false, false, 31), "html", null, true);
+            echo "
+        </div>
+
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 35
         echo "
 
 
@@ -161,7 +148,7 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
     public function getDebugInfo()
     {
-        return array (  135 => 32,  127 => 30,  123 => 29,  117 => 28,  112 => 27,  108 => 26,  105 => 25,  99 => 22,  92 => 18,  88 => 17,  84 => 16,  78 => 13,  75 => 12,  73 => 11,  65 => 5,  56 => 4,  34 => 1,);
+        return array (  122 => 35,  112 => 31,  108 => 29,  104 => 28,  99 => 25,  93 => 22,  85 => 17,  78 => 13,  75 => 12,  73 => 11,  65 => 5,  56 => 4,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -181,9 +168,9 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
     {{ form_start(formArticle) }}
 
 
-    {{ form_row(formArticle.title) }}
+
     {{ form_row(formArticle.content) }}
-    {{ form_row(formArticle.image, {'attr' : {'placeholder':'Ajouter le lien de votre image', 'class':'form-control' }})}}
+
 
 
     <button type=\"submit\" class=\"btn btn-success\">Ajouter l'article</button>
@@ -191,11 +178,14 @@ class __TwigTemplate_75fe0b74a0e5951f916d397e2a03432404e9501930d55a4f9eda2153626
 
     {% endif %}
 
+
+
     {% for article in articles %}
-        <h2>{{ article.title }}</h2>
-        <div class=\"metadata\">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i ') }}</div>
-        <img src=\"{{ article.image }}\">
-        <a href=\"{{ path('feed-show', {'id' : article.id }) }}\" class=\"btn btn-primary\">Decouvrir l'article</a>
+
+        <div class=\"form-control\">
+            {{ article.content }}
+        </div>
+
     {% endfor %}
 
 

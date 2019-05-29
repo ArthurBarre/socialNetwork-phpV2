@@ -25,19 +25,14 @@ class FeedSocialNetworkController extends AbstractController
         $articles = $repo->classByDate();
         $article = new Articles();
         $form = $this->createFormBuilder($article)
-            ->add('title', TextType::class, [
-                'attr'=> [
-                    'placeholder'=>'Titre de larticle',
-                    'class'=>'form-control'
-                ]
-            ])
+
             ->add('content', TextareaType::class, [
                 'attr'=> [
                     'placeholder'=>'Ajoutez le contenu a votre article',
                     'class'=>'form-control'
                 ]
             ])
-            ->add('image')
+
             ->getForm();
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
@@ -65,22 +60,14 @@ class FeedSocialNetworkController extends AbstractController
     {
         $article = new Articles();
         $form = $this->createFormBuilder($article)
-            ->add('title', TextType::class, [
-                'attr'=> [
-                    'placeholder'=>'Titre de larticle',
-                    'class'=>'form-control'
-                ]
-            ])
+
             ->add('content', TextareaType::class, [
                 'attr'=> [
                     'placeholder'=>'Ajoutez le contenu a votre article',
                     'class'=>'form-control'
                 ]
             ])
-            ->add('image')
-            ->add('save', SubmitType::class, [
-                'label'=>'Enregistrer'
-            ])
+
             ->getForm();
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
@@ -94,17 +81,7 @@ class FeedSocialNetworkController extends AbstractController
             'formArticle'=>$form->createView()
         ]);
     }
-    /**
-     * @Route ("/feed/{id}", name="feed-show")
-     */
-    public function show($id)
-    {
-        $repo = $this->getDoctrine()->getRepository(Articles::class);
-        $article = $repo->classByDate();
-        return $this->render('feed_social_network/show.html.twig', [
-            'article'   => $article
-        ]);
-    }
+
 
 
     /**

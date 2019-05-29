@@ -19,11 +19,7 @@ class Articles
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=355)
-     * @Assert\Length(min=10, max=255, minMessage="Votre titre est trop court")
-     */
-    private $title;
+
 
     /**
      * @ORM\Column(type="text")
@@ -31,11 +27,7 @@ class Articles
      */
     private $content;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @Assert\Url()
-     */
-    private $image;
+
 
     /**
      * @ORM\Column(type="datetime")
@@ -47,17 +39,7 @@ class Articles
         return $this->id;
     }
 
-    public function getTitle(): ?string
-    {
-        return $this->title;
-    }
 
-    public function setTitle(string $title): self
-    {
-        $this->title = $title;
-
-        return $this;
-    }
 
     public function getContent(): ?string
     {
@@ -71,17 +53,7 @@ class Articles
         return $this;
     }
 
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
 
-    public function setImage(string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
 
     public function getCreatedAt(): ?\DateTimeInterface
     {

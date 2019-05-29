@@ -62,16 +62,9 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 4, $this->source); })()), "title", [], "any", false, false, false, 4), "html", null, true);
-        echo "</h1>
-    <div class=\"metadata\">";
-        // line 5
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 5, $this->source); })()), "createdAt", [], "any", false, false, false, 5), "d/m/Y"), "html", null, true);
-        echo " à ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 5, $this->source); })()), "createdAt", [], "any", false, false, false, 5), "H:i "), "html", null, true);
-        echo "</div>
-    <img src=\"article.image\">
+        echo "
+   
+
 
    <p>";
         // line 8
@@ -99,7 +92,7 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
 
     public function getDebugInfo()
     {
-        return array (  78 => 8,  70 => 5,  65 => 4,  56 => 3,  34 => 1,);
+        return array (  71 => 8,  65 => 4,  56 => 3,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -107,9 +100,9 @@ class __TwigTemplate_8dca8e26228c41bf0f493dc255406d2298226e0b37a961aae2521225f16
         return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>{{ article.title }}</h1>
-    <div class=\"metadata\">{{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i ') }}</div>
-    <img src=\"article.image\">
+
+   
+
 
    <p>{{ article.content }}</p>
 
