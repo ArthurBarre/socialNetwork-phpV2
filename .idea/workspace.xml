@@ -2,79 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5af34df9-d028-4779-bd1c-93c86d412ed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/socialNetwork-phpV2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/socialNetwork-phpV2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticlesFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticlesFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feed_social_network/staff.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feed_social_network/staff.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/annotations.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.af.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.af.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ar.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ar.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.az.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.az.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.bg.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.bg.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ca.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ca.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cs.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cs.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cy.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cy.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.da.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.da.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.de.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.de.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.el.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.el.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.es.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.es.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.et.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.et.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.eu.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.eu.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fa.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fa.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fi.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fi.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fr.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fr.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.gl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.gl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.he.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.he.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hr.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hr.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hu.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hu.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hy.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hy.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.id.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.id.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.it.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.it.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ja.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ja.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lb.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lb.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lt.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lt.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lv.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lv.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.mn.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.mn.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nb.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nb.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nn.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nn.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.no.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.no.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_BR.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_BR.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_PT.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_PT.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ro.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ro.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ru.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ru.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sk.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sk.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sq.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sq.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Cyrl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Cyrl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Latn.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Latn.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sv.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sv.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.th.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.th.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tl.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tl.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tr.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tr.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.uk.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.uk.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.vi.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.vi.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_CN.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_CN.52lf549.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.52lf549.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.52lf549.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/017fa535e28d7da1929cbd178db657a54fc70852dd011e3c174f95d0aa789c64.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/01/017fa535e28d7da1929cbd178db657a54fc70852dd011e3c174f95d0aa789c64.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,8 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1198">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="198">
+              <caret line="110" column="41" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="41" />
+              <folding>
+                <element signature="e#33#53#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +80,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/feed_social_network/staff.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -183,13 +126,13 @@
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/templates/feed_social_network/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/ArticlesRepository.php" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/feed_social_network/home.html.twig" />
         <option value="$PROJECT_DIR$/src/DataFixtures/ArticlesFixtures.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/StaffFixtures.php" />
         <option value="$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/templates/feed_social_network/staff.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
       </list>
     </option>
   </component>
@@ -443,12 +386,12 @@
       <updated>1558970806058</updated>
       <workItem from="1558970808251" duration="772000" />
       <workItem from="1558972651642" duration="23846000" />
-      <workItem from="1559059071022" duration="7982000" />
+      <workItem from="1559059071022" duration="8080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32600000" />
+    <option name="totallyTimeSpent" value="32698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -632,34 +575,10 @@
     <entry file="file://$PROJECT_DIR$/src/Entity/Staff.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/feed_social_network/home.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1198">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#78#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,6 +596,33 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#33#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FeedSocialNetworkController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="110" column="41" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="41" />
+          <folding>
+            <element signature="e#33#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
         </state>
       </provider>
     </entry>
